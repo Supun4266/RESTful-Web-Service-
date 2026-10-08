@@ -15,15 +15,15 @@ public class Customer {
 
     private long id;
     @NotEmpty(message = "First Name is required")
-    @Size(min = 5, message = "First Name should br at least 5 characters")
+    @Size(min = 5, message = "First Name should be at least 5 characters")
     @Column(name = "first_name")
     private String firstName;
-    @NotEmpty(message = "First Name is required")
-    @Size(min = 5, message = "First Name should br at least 5 characters")
+    @NotEmpty(message = "Last Name is required")
+    @Size(min = 5, message = "Last Name should be at least 5 characters")
     @Column(name ="last_name")
     private String lastName;
     @NotEmpty(message = "Email is required")
-    @Email(message = "pls enter validate email")
+    @Email(message = "Please enter a valid email")
     @Column(name ="email")
     private String email;
     @Column(name ="phone")
